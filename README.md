@@ -13,8 +13,10 @@ To ensure optimal query performance and accurate cross-filtering, the dataset wa
 
 ![Data Model](Images/Data_Model.png)
 
-* **Fact Table:** * `Fact Orders`: Records granular transaction details (OrderQty, UnitPrice, LineTotal, TaxAmt, Freight).
-* **Dimension Tables:** * `Dim Date`: OrderDate, Year, Month, Day.
+* **Fact Table:** 
+  * `Fact Orders`: Records granular transaction details (OrderQty, UnitPrice, LineTotal, TaxAmt, Freight).
+* **Dimension Tables:** 
+  * `Dim Date`: OrderDate, Year, Month, Day.
   * `Dim Products`: Product Name, Category, Subcategory.
   * `Dim Territory`: Territory Name, Country.
   * `Dim ShipMethod`: Shipping Method Name.
