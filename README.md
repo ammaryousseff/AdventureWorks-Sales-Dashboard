@@ -11,10 +11,12 @@ This project presents an end-to-end data analysis and visualization solution bas
 ## Data Architecture
 To ensure optimal query performance and accurate cross-filtering, the dataset was modeled using a **Star Schema** architecture.
 
-![Data Model](Images/Data Model.png)
+![Data Model](Images/Data_Model.png)
 
-* **Fact Table:** * `Fact Orders`: Records granular transaction details (OrderQty, UnitPrice, LineTotal, TaxAmt, Freight).
-* **Dimension Tables:** * `Dim Date`: OrderDate, Year, Month, Day.
+* **Fact Table:** 
+  * `Fact Orders`: Records granular transaction details (OrderQty, UnitPrice, LineTotal, TaxAmt, Freight).
+* **Dimension Tables:** 
+  * `Dim Date`: OrderDate, Year, Month, Day.
   * `Dim Products`: Product Name, Category, Subcategory.
   * `Dim Territory`: Territory Name, Country.
   * `Dim ShipMethod`: Shipping Method Name.
